@@ -1,0 +1,68 @@
+.bodyBanner {
+    @include BannerBody;
+    @include BannerImgBody;
+
+    @include mobile {
+        height: 111px;
+        width: 335px;
+        margin: 20px;
+        margin-top: 0;
+        border-radius: 10px
+    }
+
+}
+
+.BannerImgTxt {
+    @include BannerImgTxt;
+
+    @include mobile {
+        height: 48px;
+        width: 217px;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0;
+        padding-left: 16px;
+        padding-top: 16px;
+
+    }
+
+}
+
+
+.bodyContainer {
+    @include background-body;
+    display: flex;
+}
+
+.containerCards {
+    @include cardsContainer;
+}
+
+.cardsTitle {
+    @include cardsText;
+
+    @include mobile {}
+}
+
+/* 404  Error Page */
+
+.Errortxt {
+    @include Errortxt;
+    @include mobile {
+
+    }
+}
+
+.ErrorDescTxt {
+    @include descErrortxt;
+    @include mobile {
+        
+    }
+}
+
+.linkError {
+    @include linkError;
+    @include mobile {
+        
+    }
+}

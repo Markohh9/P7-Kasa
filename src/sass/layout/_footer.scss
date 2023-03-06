@@ -1,0 +1,37 @@
+.footerContainer {
+    @include background-footer;
+
+    @include mobile {
+        height: 209px;
+        width: 375px;
+        margin: 0;
+    }
+}
+
+.footerLogo {
+    @include background-img;
+
+    @include mobile {
+        height: 39px;
+        width: 122px;
+        margin-bottom: 0px;
+    }
+}
+
+.footerTxt {
+    @include footertxt;
+
+    @include mobile {
+        height: 46px;
+        width: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
