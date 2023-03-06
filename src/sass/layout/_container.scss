@@ -48,21 +48,35 @@
 
 .Errortxt {
     @include Errortxt;
-    @include mobile {
 
+    @include mobile {
+        height: 99px;
+        width: 198px;
+        font-size: 96px;
+        margin-bottom: 11px
     }
 }
 
 .ErrorDescTxt {
     @include descErrortxt;
+
     @include mobile {
-        
+        height: 52px;
+        width: 260px;
+        font-size: 18px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 133px;
     }
 }
 
 .linkError {
     @include linkError;
+
     @include mobile {
-        
+        height: 20px;
+        width: 221px;
+        font-size: 14px;
+        margin-bottom: 235px;
     }
 }
