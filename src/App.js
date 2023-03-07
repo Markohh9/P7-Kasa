@@ -7,7 +7,7 @@ import Propos from './components/Propos';
 function App() {
   return (
     <div>
-      
+      <Propos /> 
     </div>
   );
 }
@@ -16,4 +16,4 @@ export default App;
 
 /*<HomePage />
 <ErrorPage />
-<Propos /> */
+*/
