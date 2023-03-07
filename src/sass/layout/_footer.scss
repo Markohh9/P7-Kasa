@@ -2,9 +2,7 @@
     @include background-footer;
 
     @include mobile {
-        height: 209px;
-        width: auto;
-        margin: 0;
+        @include background-footerMobile;
     }
 }
 
@@ -12,9 +10,7 @@
     @include background-img;
 
     @include mobile {
-        height: 39px;
-        width: 122px;
-        margin-bottom: 0px;
+        @include background-imgMobile;
     }
 }
 
@@ -22,16 +18,6 @@
     @include footertxt;
 
     @include mobile {
-        height: 46px;
-        width: auto;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 142.6%;
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        color: #FFFFFF;
+        @include footertxtMobile;
     }
 }

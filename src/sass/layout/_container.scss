@@ -3,11 +3,7 @@
     @include BannerImgBody;
 
     @include mobile {
-        height: 111px;
-        width: 335px;
-        margin: 20px;
-        margin-top: 0;
-        border-radius: 10px
+        @include BannerBodyMobile;
     }
 }
 
@@ -15,14 +11,7 @@
     @include BannerImgTxt;
 
     @include mobile {
-        height: 48px;
-        width: 217px;
-        font-size: 24px;
-        margin: 0px;
-        padding: 0;
-        padding-left: 16px;
-        padding-top: 16px;
-
+        @include BannerImgTxtMobile;
     }
 
 }
@@ -49,10 +38,7 @@
     @include Errortxt;
 
     @include mobile {
-        height: 99px;
-        width: 198px;
-        font-size: 96px;
-        margin-bottom: 11px
+        @include ErrortxtMobile;
     }
 }
 
@@ -60,12 +46,7 @@
     @include descErrortxt;
 
     @include mobile {
-        height: 52px;
-        width: 260px;
-        font-size: 18px;
-        text-align: center;
-        margin: auto;
-        margin-bottom: 133px;
+        @include ErrorDescTxtMobile;
     }
 }
 
@@ -73,10 +54,7 @@
     @include linkError;
 
     @include mobile {
-        height: 20px;
-        width: 221px;
-        font-size: 14px;
-        margin-bottom: 235px;
+        @include linkErrorMobile;
     }
 }
 
@@ -100,92 +78,45 @@
 /* Drop menu */
 
 .dropbtncontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1023px;
-    margin: auto;
-    margin-bottom: 33px;
+    @include dropbtncontainer;
 
     @include mobile {
-        height: 35px;
-        width: 335px;
-        display: block;
+        @include dropbtbncontainerMobile;
     }
 }
 
 .dropbtn {
-    height: 47px;
-    width: 1023px;
-    background: #ff6060;
-    border-radius: 5px;
-    border: none;
+    @include dropbtn;
 
     @include mobile {
-        width: 335px;
-        height: 30px;
+        @include dropbtnMobile;
     }
 }
 
 .txtbtndrop {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 34px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include txtbtndrop;
 
     p {
-    margin-left: 18px;
-    margin-top: 5px;
+        @include txtbtndropP;
 
-    @include mobile {
-        height: 19px;
-        width: 57px;
-        margin-left: 11px;
-        font-size: 13px;
-        line-height: 142.6%;
-    }
+        @include mobile {
+            @include txtbtndropMobile;
+        }
     }
 }
 
 .txtondropbtn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    color: #ff6060;
-    background: #f7f7f7;
-    border-radius: 5px;
-    margin: 0;
-    padding-top: 27px;
-    padding-left: 18px;
-    padding-bottom: 19px;
+    @include txtondropbtn;
 
     @include mobile {
-font-size: 12px;
-line-height: 142.6%;
-padding-top: 23px;
-    padding-left: 11.51px;
-    padding-bottom: 52px;
+        @include txtondropbtnMobile;
     }
 }
 
 .arrowbtn {
-    margin-bottom: 16px;
-    margin-right: 33px;
+    @include arrowbtn;
 
     @include mobile {
-        height: 9px;
-        width: 15px;
-        margin-bottom: 10.26px;
-        margin-right: 6.79px;
+        @include arrowbtnMobile;
     }
 }

@@ -3,10 +3,7 @@
 
         @include mobile {
 
-                height: 47px;
-                width: 335px;
-                margin: auto;
-                margin-bottom: 20px
+                @include margin-navMobile;
         }
 }
 
@@ -16,47 +13,26 @@ nav {
 
         img {
                 @include mobile {
-                        height: 47px;
-                        width: 145px;
-                        margin-right: 0;
+                        @include nav-containerMobile;
                 }
         }
 }
 
 .AccueilLink {
         @include navfont;
-        height: 136px;
-        width: 34px;
-        margin-left: 720px;
+        @include navfontsize;
 
         @include mobile {
-                height: 17px;
-                width: 59px;
-                margin-left: 60px;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 142.6%;
+                @include navfontsizeMobile;
 
         }
 }
 
 .ProposLink {
         @include navfont;
-        height: 116px;
-        width: 34px;
-        margin-left: 57px;
+        @include navfontsizeSecond;
 
         @include mobile {
-                height: 17px;
-                width: 71px;
-                margin-left: 10px;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 142.6%;
-
+                @include navfontsizeSecondMobile;
         }
 }
