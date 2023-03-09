@@ -16,6 +16,10 @@ nav {
                         @include nav-containerMobile;
                 }
         }
+
+        @include mobile {
+                width: auto;
+        }
 }
 
 .AccueilLink {

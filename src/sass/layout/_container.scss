@@ -4,6 +4,7 @@
 
     @include mobile {
         @include BannerBodyMobile;
+        
     }
 }
 
@@ -69,9 +70,12 @@
     @include mobile {
         height: 223px;
         width: 336px;
-        margin: 20px;
+        margin: auto;
+        margin-bottom: 20px;
         margin-top: 0;
-        border-radius: 10px
+        border-radius: 10px;
+        background-position: none;
+        background-size: cover;
     }
 }
 
