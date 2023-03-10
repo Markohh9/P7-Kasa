@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
-import BodyError from './BodyError';
-import Footer from './Footer'
+import Navbar from '../components/Navbar';
+import BodyError from '../components/BodyError';
+import Footer from '../components/Footer'
 
 function ErrorPage() {
     return (

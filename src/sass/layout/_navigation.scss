@@ -1,19 +1,33 @@
 .navdiv {
-        @include margin-nav;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 63px;
 
         @include mobile {
 
-                @include margin-navMobile;
+
+                height: 47px;
+                width: 335px;
+                margin: auto;
+                margin-bottom: 20px
         }
 }
 
 nav {
-        @include nav-container;
+        width: 1240px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
         @include flex-rightside;
 
         img {
                 @include mobile {
-                        @include nav-containerMobile;
+                        height: 47px;
+                        width: 145px;
+                        margin-right: 0;
                 }
         }
 
@@ -23,20 +37,46 @@ nav {
 }
 
 .AccueilLink {
-        @include navfont;
-        @include navfontsize;
+        font-family: $primary-font;
+        font-weight: $medium-weight;
+        font-size: $text-size;
+        color: $color-primary;
+        text-decoration: none;
+        height: 136px;
+        width: 34px;
+        margin-left: 720px;
 
         @include mobile {
-                @include navfontsizeMobile;
+                height: 17px;
+                width: 59px;
+                margin-left: 60px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 142.6%;
 
         }
 }
 
 .ProposLink {
-        @include navfont;
-        @include navfontsizeSecond;
+        font-family: $primary-font;
+        font-weight: $medium-weight;
+        font-size: $text-size;
+        color: $color-primary;
+        text-decoration: none;
+        height: 116px;
+        width: 34px;
+        margin-left: 57px;
 
         @include mobile {
-                @include navfontsizeSecondMobile;
+                height: 17px;
+                width: 71px;
+                margin-left: 10px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 142.6%;
         }
 }

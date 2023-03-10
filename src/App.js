@@ -1,13 +1,13 @@
 import './sass/index.scss'
-import HomePage from './components/HomePage';
-import ErrorPage from './components/ErrorPage';
-import Propos from './components/Propos';
+import HomePage from './pages/HomePage';
+import ErrorPage from './pages/ErrorPage';
+import Propos from './pages/Propos';
 
 
 function App() {
   return (
     <div>
-      <HomePage /> 
+      <Propos />
     </div>
   );
 }
@@ -15,5 +15,5 @@ function App() {
 export default App;
 
 /*
-<ErrorPage /><Propos />
+<HomePage /><ErrorPage />
 */

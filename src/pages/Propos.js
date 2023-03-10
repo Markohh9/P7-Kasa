@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
-import BodyPropos from './BodyPropos';
-import Footer from './Footer'
+import Navbar from '../components/Navbar';
+import BodyPropos from '../components/BodyPropos';
+import Footer from '../components/Footer'
 
 function Propos () {
 

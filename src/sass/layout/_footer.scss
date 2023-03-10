@@ -1,23 +1,55 @@
 .footerContainer {
-    @include background-footer;
+    height: 126px;
+    width: 1440px;
+    background-color: $color-black;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 66px;
 
     @include mobile {
-        @include background-footerMobile;
+        height: 209px;
+        width: auto;
+        margin: 0;
     }
 }
 
 .footerLogo {
-    @include background-img;
+    width: 122px;
+    height: 39px;
+    color: $color-white;
+    margin: auto;
+    display: flex;
+    margin-bottom: 28px;
 
     @include mobile {
-        @include background-imgMobile;
+        height: 39px;
+        width: 122px;
+        margin-bottom: 0px;
     }
 }
 
 .footerTxt {
-    @include footertxt;
+    font-family: $primary-font;
+    font-weight: $medium-weight;
+    font-size: $text-size;
+    display: flex;
+    color: $color-white;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 29px;
 
     @include mobile {
-        @include footertxtMobile;
+        height: 46px;
+        width: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
     }
 }
