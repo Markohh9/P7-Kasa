@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Body from '../components/Body';
 import Footer from '../components/Footer'
+import Cards from '../components/Cards'
 
 function HomePage() {
     return (
@@ -10,6 +11,7 @@ function HomePage() {
         </header>
         <body>
             <Body />
+            <Cards />
         </body>
         <footer>
             <Footer />
