@@ -8,6 +8,7 @@ function Cards() {
     useEffect(() => {
         async function getData() {
             const data = await fetchAppartements();
+            console.log(data);
             setAppartements(data);
         }
         getData();
@@ -17,8 +18,8 @@ function Cards() {
         <div className="bodyContainer">
             {appartements.map((appartement) => (
             <div key={appartement.id}>
-                <h3 className="cardsTitle">{appartement.name}</h3>
-                <img className="containerCards" src={appartement.image} alt={appartement.name} />
+                <h3 className="cardsTitle">{appartement.title}</h3>
+                <img className="containerCards" src={appartement.cover} alt={appartement.title} />
             </div>
         ))}
         </div>

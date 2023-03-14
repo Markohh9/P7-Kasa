@@ -80,3 +80,7 @@ nav {
                 line-height: 142.6%;
         }
 }
+
+.AccueilLink.active, .ProposLink.active {
+        text-decoration: underline;
+}

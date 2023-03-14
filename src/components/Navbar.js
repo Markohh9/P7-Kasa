@@ -1,4 +1,6 @@
 import logo from '../assets/img/logo.png'
+import { NavLink } from 'react-router-dom';
+
 
 function Navbar () {
 
@@ -12,8 +14,8 @@ function Navbar () {
             <nav>
                 <img src={logo} alt="Kasa Logo" className='LogoNav'/>
                 <div className='Navtxt'>
-                    <a href="/index.html" className='AccueilLink'>ACCUEIL</a>
-                    <a href="/APropos.html" className='ProposLink'>A PROPOS</a>
+                    <NavLink to="/" className='AccueilLink' activeClassName="active"> ACCUEIL</NavLink>
+                    <NavLink to="/about" className='ProposLink' activeClassName="active">A PROPOS</NavLink>
                 </div>
             </nav>
             

@@ -1,4 +1,3 @@
-import BodyImagePropos from '../assets/img/BodyPropos.png'
 import Droptxt from './Droptxt';
 
 
